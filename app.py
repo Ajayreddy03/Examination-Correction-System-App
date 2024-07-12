@@ -4,6 +4,11 @@ from phi.document.reader.pdf import PDFReader
 from phi.utils.log import logger
 from assistant import get_groq_assistant
 import io
+import os
+
+# environment variables
+os.environ['GROQ_API_KEY'] = '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'
+
 
 st.set_page_config(
     page_title="Test Corrector Model"
